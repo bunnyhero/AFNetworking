@@ -88,6 +88,11 @@
  */
 - (void)cancelImageRequestOperation;
 
+//! * WORKAROUND * make this public so we can see if a request has already been set
+
+@property (readonly, nonatomic, strong) AFImageRequestOperation *af_imageRequestOperation;
+
 @end
+
 
 #endif
